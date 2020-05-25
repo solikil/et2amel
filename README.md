@@ -1,4 +1,4 @@
-Et2amel
+# Et2amel
 
 [![Validate Gradle Wrapper](https://github.com/solikil/et2amel/workflows/Validate%20Gradle%20Wrapper/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Validate+Gradle+Wrapper")
 [![Pre Merge Checks](https://github.com/solikil/et2amel/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Pre+Merge+Checks")
