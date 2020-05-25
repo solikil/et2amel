@@ -4,6 +4,7 @@
 [![Pre Merge Checks](https://github.com/solikil/et2amel/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Pre+Merge+Checks")
 [![License](https://img.shields.io/github/license/solikil/et2amel.svg)](https://github.com/solikil/et2amel/blob/master/LICENSE)
 [![Language](https://img.shields.io/github/languages/top/solikil/et2amel?color=blue&logo=kotlin)](https://kotlinlang.org)
+[![Hits-of-Code](https://hitsofcode.com/github/solikil/et2amel)](https://hitsofcode.com/view/github/solikil/et2amel)
 
 ## Contributing 🤝
 
