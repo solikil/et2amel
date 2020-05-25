@@ -1,6 +1,9 @@
 Et2amel
 
-![Pre Merge Checks](https://github.com/cortinico/kotlin-android-template/workflows/Pre%20Merge%20Checks/badge.svg)  ![License](https://img.shields.io/github/license/cortinico/kotlin-android-template.svg) ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
+[![Validate Gradle Wrapper](https://github.com/solikil/et2amel/workflows/Validate%20Gradle%20Wrapper/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Validate+Gradle+Wrapper")
+[![Pre Merge Checks](https://github.com/solikil/et2amel/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Pre+Merge+Checks")
+[![License](https://img.shields.io/github/license/solikil/et2amel.svg)](https://github.com/solikil/et2amel/blob/master/LICENSE)
+[![Language](https://img.shields.io/github/languages/top/solikil/et2amel?color=blue&logo=kotlin)](https://kotlinlang.org)
 
 ## Contributing 🤝
 
