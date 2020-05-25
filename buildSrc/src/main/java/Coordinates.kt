@@ -1,7 +1,7 @@
-val PUBLISHING_GROUP = "com.ncorti.kotlin.template"
+val PUBLISHING_GROUP = "com.solikil.et2amel"
 
 object AppCoordinates {
-    const val APP_ID = "com.solikil.et2amel"
+    const val APP_ID = "com.solikil.et2amel.app"
 
     const val APP_VERSION_NAME = "1.0.0"
     const val APP_VERSION_CODE = 1
