@@ -3,8 +3,6 @@ package com.solikil.kotlin.et2amel.app
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.solikil.kotlin.et2amel.library.FactorialCalculator
-import com.solikil.kotlin.et2amel.library.android.NotificationUtil
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
