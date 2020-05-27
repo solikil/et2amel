@@ -29,7 +29,7 @@ jobs:
           path: ~/.gradle/wrapper/
           key: cache-gradle-wrapper
       - name: Run Gradle tasks
-        run: ./gradlew build
+        run: ./gradlew build --warning-mode all
       - run: ./gradlew ktlintcheck
       - name: Stop Gradle
         run: ./gradlew --stop
