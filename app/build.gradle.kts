@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     id("kotlin-android-extensions")
+    kotlin("kapt")
 }
 
 android {
@@ -43,7 +44,7 @@ dependencies {
     implementation(SupportLibs.ANDROIDX_CONSTRAINT_LAYOUT)
     implementation(SupportLibs.ANDROIDX_CORE_KTX)
     implementation(SupportLibs.DAGGER)
-    // implementation(SupportLibs.DAGGER_COMPILER)
+    kapt(SupportLibs.DAGGER_COMPILER)
     implementation(SupportLibs.MOSHI)
     implementation(SupportLibs.MOSHI_ADAPTERS)
     implementation(SupportLibs.OK_HTTP)
