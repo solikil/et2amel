@@ -14,6 +14,9 @@ object Versions {
     const val JUNIT = "4.13"
     const val KTLINT = "0.36.0"
     const val DAGGER = "2.27"
+    const val OK_HTTP = "4.7.2"
+    const val RX_KOTLIN = "3.0.0"
+    const val MOSHI = "1.9.2"
 }
 
 object BuildPluginsVersion {
@@ -29,6 +32,11 @@ object SupportLibs {
     const val ANDROIDX_CONSTRAINT_LAYOUT = "com.android.support.constraint:constraint-layout:${Versions.CONSTRAINT_LAYOUT}"
     const val ANDROIDX_CORE_KTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
     const val DAGGER = "com.google.dagger:dagger:${Versions.DAGGER}"
+    const val DAGGER_COMPILER = "com.google.dagger:dagger-compiler:${Versions.DAGGER}"
+    const val OK_HTTP = "com.squareup.okhttp3:okhttp:${Versions.OK_HTTP}"
+    const val RX_KOTLIN = "com.github.reactivex:rxkotlin:${Versions.RX_KOTLIN}"
+    const val MOSHI = "com.squareup.moshi:moshi-kotlin:${Versions.MOSHI}"
+    const val MOSHI_ADAPTERS = "com.squareup.moshi:moshi-adapters:${Versions.MOSHI}"
 }
 
 object TestingLib {

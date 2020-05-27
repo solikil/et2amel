@@ -43,6 +43,11 @@ dependencies {
     implementation(SupportLibs.ANDROIDX_CONSTRAINT_LAYOUT)
     implementation(SupportLibs.ANDROIDX_CORE_KTX)
     implementation(SupportLibs.DAGGER)
+    implementation(SupportLibs.DAGGER_COMPILER)
+    implementation(SupportLibs.MOSHI)
+    implementation(SupportLibs.MOSHI_ADAPTERS)
+    implementation(SupportLibs.OK_HTTP)
+    implementation(SupportLibs.RX_KOTLIN)
 
     testImplementation(TestingLib.JUNIT)
 
