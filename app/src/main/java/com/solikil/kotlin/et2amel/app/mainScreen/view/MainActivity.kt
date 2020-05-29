@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.solikil.kotlin.et2amel.app.FactorialCalculator
 import com.solikil.kotlin.et2amel.app.NotificationUtil
 import com.solikil.kotlin.et2amel.app.R
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 

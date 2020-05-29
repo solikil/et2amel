@@ -43,12 +43,17 @@ dependencies {
     implementation(SupportLibs.ANDROIDX_APPCOMPAT)
     implementation(SupportLibs.ANDROIDX_CONSTRAINT_LAYOUT)
     implementation(SupportLibs.ANDROIDX_CORE_KTX)
+    implementation(SupportLibs.ANDROIDX_NAVIGATION_UI)
+    implementation(SupportLibs.ANDROIDX_FRAGMENT)
+    implementation(SupportLibs.ANDROIDX_NAVIGATION_FRAGMENT)
+
     implementation(SupportLibs.DAGGER)
-    kapt(SupportLibs.DAGGER_COMPILER)
     implementation(SupportLibs.MOSHI)
     implementation(SupportLibs.MOSHI_ADAPTERS)
     implementation(SupportLibs.OK_HTTP)
     implementation(SupportLibs.RX_KOTLIN)
+
+    kapt(SupportLibs.DAGGER_COMPILER)
 
     testImplementation(TestingLib.JUNIT)
 
