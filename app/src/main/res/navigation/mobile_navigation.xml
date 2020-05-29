@@ -4,13 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@id/fragment_home"
-    tools:ignore="UnusedNavigation">
+    >
 
     <fragment
         android:id="@+id/fragment_home"
         android:name="com.solikil.kotlin.et2amel.app.mainScreen.features.homeFeature.view.HomeLayout"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragment_timer"
+        android:name="com.solikil.kotlin.et2amel.app.mainScreen.features.timerFeature.view.TimerLayout"
+        android:label="@string/title_timer"
+        tools:layout="@layout/fragment_timer" />
 
 
 </navigation>
