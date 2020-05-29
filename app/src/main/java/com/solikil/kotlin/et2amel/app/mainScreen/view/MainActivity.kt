@@ -1,12 +1,14 @@
 package com.solikil.kotlin.et2amel.app.mainScreen.view
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.solikil.kotlin.et2amel.app.FactorialCalculator
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.solikil.kotlin.et2amel.app.NotificationUtil
 import com.solikil.kotlin.et2amel.app.R
-import kotlinx.android.synthetic.main.fragment_home.*
+import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +22,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_compute.setOnClickListener {
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        val appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.navigation_home, R.id.navigation_timer))
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
+      /*  button_compute.setOnClickListener {
             val input = edit_text_factorial.text.toString().toInt()
             val result = FactorialCalculator.computeFactorial(
                 input
@@ -34,6 +47,6 @@ class MainActivity : AppCompatActivity() {
                 title = getString(R.string.notification_title),
                 message = result
             )
-        }
+        } */
     }
 }
