@@ -1,9 +1,10 @@
 # Et2amel
-
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0bb9565a68224e66879906055c35ffce)](https://www.codacy.com/gh/solikil/et2amel?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=solikil/et2amel&amp;utm_campaign=Badge_Grade) [![Pre Merge Checks](https://github.com/solikil/et2amel/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/solikil/et2amel/actions?query=workflow%3A"Pre+Merge+Checks")
 [![Hits-of-Code](https://hitsofcode.com/github/solikil/et2amel)](https://hitsofcode.com/view/github/solikil/et2amel)
 [![License](https://img.shields.io/github/license/solikil/et2amel.svg)](https://github.com/solikil/et2amel/blob/master/LICENSE)
 [![Language](https://img.shields.io/github/languages/top/solikil/et2amel?color=blue&logo=kotlin)](https://kotlinlang.org)
+
+A mobile application for meditation in Modern Egyptian Language.
 
 ## License
 
