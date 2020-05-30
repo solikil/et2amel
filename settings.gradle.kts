@@ -14,7 +14,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = ("kotlin-android-template")
+rootProject.name = ("et2amel")
 
 include(
     "app"
