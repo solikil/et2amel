@@ -54,6 +54,7 @@ dependencies {
     implementation(SupportLibs.MOSHI)
     implementation(SupportLibs.MOSHI_ADAPTERS)
     implementation(SupportLibs.OK_HTTP)
+    implementation(SupportLibs.OK_HTTP_LOGGING)
     implementation(SupportLibs.RX_KOTLIN)
 
     kapt(SupportLibs.DAGGER_COMPILER)
