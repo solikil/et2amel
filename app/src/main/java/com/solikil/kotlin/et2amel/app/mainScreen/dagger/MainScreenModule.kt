@@ -6,12 +6,12 @@ import com.solikil.kotlin.et2amel.app.mainScreen.interactor.MainScreenInteractor
 import com.solikil.kotlin.et2amel.app.mainScreen.interactor.MainScreenInteractorImp
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenter
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenterImp
-import com.solikil.kotlin.et2amel.app.mainScreen.view.MainActivity
+import com.solikil.kotlin.et2amel.app.mainScreen.view.MainScreenActivity
 import dagger.Module
 import dagger.Provides
 
 @Module
-class MainScreenModule(private val mainScreenView: MainActivity) {
+class MainScreenModule(private val mainScreenView: MainScreenActivity) {
 
     @ApplicationScope
     @Provides
