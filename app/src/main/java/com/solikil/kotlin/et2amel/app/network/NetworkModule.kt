@@ -3,9 +3,9 @@ package com.solikil.kotlin.et2amel.app.network
 import com.solikil.kotlin.et2amel.app.base.dagger.ApplicationScope
 import dagger.Module
 import dagger.Provides
+import java.util.concurrent.TimeUnit
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import java.util.concurrent.TimeUnit
 
 private const val TIMEOUT_SECONDS = 30L
 
