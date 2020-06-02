@@ -9,8 +9,8 @@ import com.solikil.kotlin.et2amel.app.FactorialCalculator
 import com.solikil.kotlin.et2amel.app.NotificationUtil
 import com.solikil.kotlin.et2amel.app.R
 import com.solikil.kotlin.et2amel.app.mainScreen.features.homeFeature.presenter.HomePresenter
-import kotlinx.android.synthetic.main.fragment_home.view.*
 import javax.inject.Inject
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeLayout : HomeView, Fragment() {
 
