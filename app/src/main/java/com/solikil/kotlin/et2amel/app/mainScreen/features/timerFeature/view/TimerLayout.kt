@@ -6,8 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.solikil.kotlin.et2amel.app.R
+import com.solikil.kotlin.et2amel.app.mainScreen.features.timerFeature.presenter.TimerPresenter
+import javax.inject.Inject
 
-class TimerLayout : Fragment() {
+class TimerLayout : TimerView, Fragment() {
+
+    @Inject
+    lateinit var timerPresenter: TimerPresenter
 
     override fun onCreateView(
         inflater: LayoutInflater,

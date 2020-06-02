@@ -8,9 +8,14 @@ import androidx.fragment.app.Fragment
 import com.solikil.kotlin.et2amel.app.FactorialCalculator
 import com.solikil.kotlin.et2amel.app.NotificationUtil
 import com.solikil.kotlin.et2amel.app.R
+import com.solikil.kotlin.et2amel.app.mainScreen.features.homeFeature.presenter.HomePresenter
 import kotlinx.android.synthetic.main.fragment_home.view.*
+import javax.inject.Inject
 
 class HomeLayout : HomeView, Fragment() {
+
+    @Inject
+    lateinit var homePresenter: HomePresenter
 
     private val notificationUtil: NotificationUtil by lazy {
         NotificationUtil(
