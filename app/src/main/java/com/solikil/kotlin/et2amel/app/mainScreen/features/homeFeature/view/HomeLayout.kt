@@ -10,7 +10,7 @@ import com.solikil.kotlin.et2amel.app.NotificationUtil
 import com.solikil.kotlin.et2amel.app.R
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
-class HomeLayout : Fragment() {
+class HomeLayout : HomeView, Fragment() {
 
     private val notificationUtil: NotificationUtil by lazy {
         NotificationUtil(
