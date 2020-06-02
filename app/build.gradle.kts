@@ -56,6 +56,7 @@ dependencies {
     implementation(SupportLibs.OK_HTTP)
     implementation(SupportLibs.OK_HTTP_LOGGING)
     implementation(SupportLibs.RX_KOTLIN)
+    implementation(SupportLibs.SLIDE_UP_PANEL)
 
     kapt(SupportLibs.DAGGER_COMPILER)
 
