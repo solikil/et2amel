@@ -17,12 +17,32 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnBottomSheet"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Trigger Bottom Sheet!" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBottomSheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bottom Sheet" />
+
+                <Button
+                    android:id="@+id/btnBottomSheetDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bottom Sheet Dialog" />
+
+                <Button
+                    android:id="@+id/btnBottomSheetDialogFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bottom Sheet Dialog Fragment" />
+            </LinearLayout>
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/nav_host_fragment"

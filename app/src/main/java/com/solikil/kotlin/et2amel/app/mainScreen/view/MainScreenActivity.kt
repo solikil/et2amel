@@ -1,5 +1,6 @@
 package com.solikil.kotlin.et2amel.app.mainScreen.view
 
+import BottomSheetFragment
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.solikil.kotlin.et2amel.app.R
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.DaggerMainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenComponent
@@ -46,6 +48,17 @@ class MainScreenActivity : AppCompatActivity() {
             }
         }
 
+        btnBottomSheetDialog.setOnClickListener {
+            val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
+            val dialog = BottomSheetDialog(this)
+            dialog.setContentView(view)
+            dialog.show()
+        }
+
+        btnBottomSheetDialogFragment.setOnClickListener {
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+        }
 
         bottomSheetBehavior.setBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
