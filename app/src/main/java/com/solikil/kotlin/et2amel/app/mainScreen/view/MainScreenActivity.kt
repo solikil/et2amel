@@ -4,7 +4,9 @@ import BottomSheetFragment
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -36,30 +38,32 @@ class MainScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         injectDependencies()
         setContentView(R.layout.activity_main)
+        setupBottomSheet()
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        val navController = setupBottommNavigation()
+        navView.setupWithNavController(navController)
+    }
 
+    private fun setupBottommNavigation(): NavController {
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
 
-///////////////////////////////////////////////////
+        val appBarConfiguration =
+            AppBarConfiguration(setOf(R.id.navigation_home, R.id.navigation_timer))
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        return navController
+    }
+
+    private fun setupBottomSheet() {
         val bottomSheetBehavior = BottomSheetBehavior.from(bottom_sheet_layout)
-        btnBottomSheet.setOnClickListener {
-            if (bottomSheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED)
-            } else {
-                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED)
-            }
-        }
+        handleSimpleBottomSheet(bottomSheetBehavior)
+        setSimpleBottomSheetCallback(bottomSheetBehavior)
+        handleDialogBottomSheet()
+        handleFragmentBottomSheet()
+    }
 
-        btnBottomSheetDialog.setOnClickListener {
-            val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
-            val dialog = BottomSheetDialog(this)
-            dialog.setContentView(view)
-            dialog.show()
-        }
-
-        btnBottomSheetDialogFragment.setOnClickListener {
-            val bottomSheetFragment = BottomSheetFragment()
-            bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
-        }
-
+    private fun setSimpleBottomSheetCallback(bottomSheetBehavior: BottomSheetBehavior<LinearLayout>) {
         bottomSheetBehavior.setBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
@@ -83,19 +87,32 @@ class MainScreenActivity : AppCompatActivity() {
                 // React to dragging events
             }
         })
-////////////////////////////////////////////////////
+    }
 
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+    private fun handleFragmentBottomSheet() {
+        btnBottomSheetDialogFragment.setOnClickListener {
+            val bottomSheetFragment = BottomSheetFragment()
+            bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+        }
+    }
 
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
+    private fun handleDialogBottomSheet() {
+        btnBottomSheetDialog.setOnClickListener {
+            val view = layoutInflater.inflate(R.layout.bottom_sheet, null)
+            val dialog = BottomSheetDialog(this)
+            dialog.setContentView(view)
+            dialog.show()
+        }
+    }
 
-        val appBarConfiguration =
-            AppBarConfiguration(setOf(R.id.navigation_home, R.id.navigation_timer))
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        navView.setupWithNavController(navController)
+    private fun handleSimpleBottomSheet(bottomSheetBehavior: BottomSheetBehavior<LinearLayout>) {
+        btnBottomSheet.setOnClickListener {
+            if (bottomSheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED)
+            } else {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED)
+            }
+        }
     }
 
     private fun injectDependencies() {
