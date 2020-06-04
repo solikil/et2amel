@@ -1,17 +1,22 @@
 package com.solikil.kotlin.et2amel.app.mainScreen.view
 
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.solikil.kotlin.et2amel.app.R
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.DaggerMainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenModule
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenter
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.bottom_sheet.*
 import javax.inject.Inject
 
 class MainScreenActivity : AppCompatActivity() {
@@ -29,6 +34,43 @@ class MainScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         injectDependencies()
         setContentView(R.layout.activity_main)
+
+
+///////////////////////////////////////////////////
+        val bottomSheetBehavior = BottomSheetBehavior.from(bottom_sheet_layout)
+        btnBottomSheet.setOnClickListener {
+            if (bottomSheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED)
+            } else {
+                bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED)
+            }
+        }
+
+
+        bottomSheetBehavior.setBottomSheetCallback(object :
+            BottomSheetBehavior.BottomSheetCallback() {
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+                // React to state change
+                when (newState) {
+                    BottomSheetBehavior.STATE_HIDDEN -> {
+                    }
+                    BottomSheetBehavior.STATE_EXPANDED -> {
+                        Log.println(Log.INFO, "df", "expanded")
+                    }
+                    BottomSheetBehavior.STATE_COLLAPSED -> {
+                    }
+                    BottomSheetBehavior.STATE_DRAGGING -> {
+                    }
+                    BottomSheetBehavior.STATE_SETTLING -> {
+                    }
+                }
+            }
+
+            override fun onSlide(bottomSheet: View, slideOffset: Float) {
+                // React to dragging events
+            }
+        })
+////////////////////////////////////////////////////
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
