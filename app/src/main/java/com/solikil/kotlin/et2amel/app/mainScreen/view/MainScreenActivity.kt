@@ -1,6 +1,7 @@
 package com.solikil.kotlin.et2amel.app.mainScreen.view
 
-import BottomSheetFragment
+import BottomSheetLayout
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -40,11 +41,11 @@ class MainScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setupBottomSheet()
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
-        val navController = setupBottommNavigation()
+        val navController = setupBottomNavigation()
         navView.setupWithNavController(navController)
     }
 
-    private fun setupBottommNavigation(): NavController {
+    private fun setupBottomNavigation(): NavController {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
@@ -67,7 +68,6 @@ class MainScreenActivity : AppCompatActivity() {
         bottomSheetBehavior.setBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
-                // React to state change
                 when (newState) {
                     BottomSheetBehavior.STATE_HIDDEN -> {
                     }
@@ -80,22 +80,24 @@ class MainScreenActivity : AppCompatActivity() {
                     }
                     BottomSheetBehavior.STATE_SETTLING -> {
                     }
+                    BottomSheetBehavior.STATE_HALF_EXPANDED -> {
+                    }
                 }
             }
-
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                // React to dragging events
+                /* React to dragging events */
             }
         })
     }
 
     private fun handleFragmentBottomSheet() {
         btnBottomSheetDialogFragment.setOnClickListener {
-            val bottomSheetFragment = BottomSheetFragment()
+            val bottomSheetFragment = BottomSheetLayout()
             bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
         }
     }
 
+    @SuppressLint("InflateParams")
     private fun handleDialogBottomSheet() {
         btnBottomSheetDialog.setOnClickListener {
             val view = layoutInflater.inflate(R.layout.bottom_sheet, null)

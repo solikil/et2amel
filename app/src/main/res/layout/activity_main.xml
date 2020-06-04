@@ -27,21 +27,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Bottom Sheet" />
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="@string/bottom_sheet" />
 
                 <Button
                     android:id="@+id/btnBottomSheetDialog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Bottom Sheet Dialog" />
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="@string/bottom_sheet_dialog" />
 
                 <Button
                     android:id="@+id/btnBottomSheetDialogFragment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Bottom Sheet Dialog Fragment" />
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:text="@string/bottom_sheet_dialog_fragment" />
             </LinearLayout>
 
             <androidx.fragment.app.FragmentContainerView
