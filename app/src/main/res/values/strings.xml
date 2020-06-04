@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">Et2amel</string>
-    <string name="title">Et2amel title</string>
-    <string name="description">You can compute a factorial using the library-kotlin module. The result will be also shown in a notification using the library-android module.</string>
-    <string name="factorial_hint">Insert a number to compute his factorial</string>
-    <string name="compute">Compute</string>
-    <string name="notification_title">The Result is:</string>
-	<string name="channel_name">Default</string>
-    <string name="channel_description">Default notifications for this app</string>
-    <string name="title_home">Home</string>
-    <string name="title_timer">Timer</string>
+    <!--   <string name="notification_title">The Result is:</string> -->
+       <string name="channel_name">Default</string>
+           <string name="channel_description">Default notifications for this app</string>
+           <string name="title_home">Home</string>
+           <string name="title_timer">Timer</string>
+    <string name="btn_slash" />
 </resources>

@@ -56,6 +56,7 @@ dependencies {
     implementation(SupportLibs.OK_HTTP)
     implementation(SupportLibs.OK_HTTP_LOGGING)
     implementation(SupportLibs.RX_KOTLIN)
+    implementation(SupportLibs.EXO_PLAYER)
 
     kapt(SupportLibs.DAGGER_COMPILER)
 

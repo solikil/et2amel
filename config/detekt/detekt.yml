@@ -244,7 +244,7 @@ formatting:
     indentSize: 4
     continuationIndentSize: 4
   MaximumLineLength:
-    active: true
+    active: false
     maxLineLength: 160
   ModifierOrdering:
     active: true
@@ -531,8 +531,8 @@ style:
   MandatoryBracesIfStatements:
     active: false
   MaxLineLength:
-    active: true
-    maxLineLength: 120
+    active: false
+    maxLineLength: 160
     excludePackageStatements: true
     excludeImportStatements: true
     excludeCommentStatements: false
