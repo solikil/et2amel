@@ -19,6 +19,7 @@ object Versions {
     const val OK_HTTP = "4.7.2"
     const val RX_KOTLIN = "3.0.0"
     const val MOSHI = "1.9.2"
+    const val EXO_PLAYER = "2.11.3"
 }
 
 object BuildPluginsVersion {
@@ -43,6 +44,7 @@ object SupportLibs {
     const val RX_KOTLIN = "com.github.reactivex:rxkotlin:${Versions.RX_KOTLIN}"
     const val MOSHI = "com.squareup.moshi:moshi-kotlin:${Versions.MOSHI}"
     const val MOSHI_ADAPTERS = "com.squareup.moshi:moshi-adapters:${Versions.MOSHI}"
+    const val EXO_PLAYER = "com.google.android.exoplayer:exoplayer:${Versions.EXO_PLAYER}"
    }
 
 object TestingLib {
