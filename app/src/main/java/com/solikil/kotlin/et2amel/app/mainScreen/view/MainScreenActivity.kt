@@ -20,9 +20,9 @@ import com.solikil.kotlin.et2amel.app.mainScreen.dagger.DaggerMainScreenComponen
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenModule
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenter
+import javax.inject.Inject
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottom_sheet.*
-import javax.inject.Inject
 
 class MainScreenActivity : AppCompatActivity() {
 
@@ -65,8 +65,7 @@ class MainScreenActivity : AppCompatActivity() {
     }
 
     private fun setSimpleBottomSheetCallback(bottomSheetBehavior: BottomSheetBehavior<LinearLayout>) {
-        bottomSheetBehavior.setBottomSheetCallback(object :
-            BottomSheetBehavior.BottomSheetCallback() {
+        bottomSheetBehavior.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
                 when (newState) {
                     BottomSheetBehavior.STATE_HIDDEN -> {
