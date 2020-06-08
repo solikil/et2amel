@@ -17,41 +17,19 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btnBottomSheetDialogFragment"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnBottomSheet"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/bottom_sheet" />
-
-                <Button
-                    android:id="@+id/btnBottomSheetDialog"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/bottom_sheet_dialog" />
-
-                <Button
-                    android:id="@+id/btnBottomSheetDialogFragment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    style="?android:attr/buttonBarButtonStyle"
-                    android:text="@string/bottom_sheet_dialog_fragment" />
-            </LinearLayout>
+                android:layout_gravity="center_horizontal"
+                android:text="@string/bottom_sheet_dialog_fragment" />
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/nav_host_fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="600dp"
                 app:defaultNavHost="true"
                 app:layout_constraintBottom_toTopOf="@id/nav_view"
                 app:layout_constraintLeft_toLeftOf="parent"

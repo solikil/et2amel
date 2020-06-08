@@ -6,8 +6,6 @@
     <string name="title_home">Home</string>
     <string name="title_timer">Timer</string>
     <string name="btn_slash" />
-    <string name="bottom_sheet">Bottom Sheet</string>
-    <string name="bottom_sheet_dialog">Bottom Sheet Dialog</string>
     <string name="bottom_sheet_dialog_fragment">Bottom Sheet Dialog Fragment</string>
     <string name="music_player_controllers_goes_here">music player controllers goes here</string>
     <string name="track_name">Track name</string>
