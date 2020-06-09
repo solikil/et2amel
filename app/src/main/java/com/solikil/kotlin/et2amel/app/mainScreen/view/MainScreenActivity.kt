@@ -14,8 +14,8 @@ import com.solikil.kotlin.et2amel.app.mainScreen.dagger.DaggerMainScreenComponen
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenModule
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenter
-import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainScreenActivity : AppCompatActivity() {
 
