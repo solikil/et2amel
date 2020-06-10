@@ -1,5 +1,6 @@
 package com.solikil.kotlin.et2amel.app.mainScreen.view
 
+import BottomSheetLayout
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -12,10 +13,9 @@ import com.solikil.kotlin.et2amel.app.R
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.DaggerMainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenComponent
 import com.solikil.kotlin.et2amel.app.mainScreen.dagger.MainScreenModule
-import com.solikil.kotlin.et2amel.app.mainScreen.features.bottomSheetFeature.view.BottomSheetLayout
 import com.solikil.kotlin.et2amel.app.mainScreen.presenter.MainScreenPresenter
-import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainScreenActivity : AppCompatActivity() {
 
