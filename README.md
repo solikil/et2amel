@@ -5,6 +5,7 @@ EN | [EG](https://github.com/solikil/et2amel/blob/master/README_EG.md)
 [![Hits-of-Code](https://hitsofcode.com/github/solikil/et2amel)](https://hitsofcode.com/view/github/solikil/et2amel)
 [![License](https://img.shields.io/github/license/solikil/et2amel.svg)](https://github.com/solikil/et2amel/blob/master/LICENSE)
 [![Language](https://img.shields.io/github/languages/top/solikil/et2amel?color=blue&logo=kotlin)](https://kotlinlang.org)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-brightgreen)](https://www.paypal.me/MichaelKMalak)
 
 A mobile application for meditation in Modern Egyptian Language.
 
