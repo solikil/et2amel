@@ -41,7 +41,8 @@ class HomeLayout : HomeView, Fragment() {
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val videoUrl: Uri = Uri.parse("https://i.imgur.com/WllAsEe.mp4")
+        // https://www.mboxdrive.com/1.mp3
+        val videoUrl: Uri = Uri.parse("https://www.mboxdrive.com/1.mp3")
         var loadControl = DefaultLoadControl()
         val bandwidthMeter = DefaultBandwidthMeter()
         val trackSelector = DefaultTrackSelector(AdaptiveTrackSelection.Factory(bandwidthMeter))
